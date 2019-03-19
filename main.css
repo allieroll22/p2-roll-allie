@@ -114,14 +114,37 @@ footer img {
   text-align: center;
   font-family: 'Molle',cursive;
 }
-.about img {
+.about-text img {
   max-width: 300px;
   height: auto;
+
 }
 .about p {
   margin: 10px;
   font-family: 'Open Sans Concensed', sans-serif;
 }
+
+.donate {
+  cursor:pointer;
+  font-size: 34px;
+  font-family: 'Molle',cursive;
+  padding:12px;
+  color:white;
+  background-color: #b6587a;
+  margin: 1em auto;
+  display: block;
+}
+
+.about-photos-container {
+  text-align: center;
+}
+
+.about-photos-container img {
+  max-width: 300px;
+  height: auto;
+  padding: 1em;
+}
+
 
 @media (min-width: 500px) {
   #mobile-video {
@@ -138,17 +161,30 @@ footer img {
   .all-at-once {
     font-size: 50px;
   }
-  .about img {
+  .about-text img {
     max-width: 200px;
     max-height: 150px;
     padding: 1em;
   }
+
+
   #jo-logo, #sea {
     float: right;
   }
   #sleep {
     float:left;
 
+
+  }
+}
+
+
+@media (min-width: 800px) {
+  .about-photos-container img {
+    max-width: 190px;
+    max-height: auto;
+    padding: 0;
+    align-items: baseline;
 
   }
 }
