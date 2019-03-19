@@ -4,4 +4,103 @@ body {
   background-repeat: no-repeat;
   background-attachment:  fixed;
   background-size: cover;
+  color:white;
+}
+
+header {
+  text-align: center;
+  margin: 0 auto;
+}
+nav a {
+  font-family: 'Molle', cursive;
+  text-align: center;
+  color:white;
+}
+
+nav li {
+  display: inline;
+  padding-right: 5%;
+  text-align: center;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*///// Home Page */
+.home {
+  // max-width: 300px;
+  text-align: center;
+}
+.home h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#desktop-video {
+  display: none;
+}
+.all-at-once {
+  font-size: 30px;
+}
+#molle {
+  font-family: 'Molle', cursive;
+}
+
+.read-more {
+  background-color: #c0d4df;
+  padding: 1em;
+  display: inline-block;
+}
+
+.read-more img {
+  width:300px;
+  height:auto;
+}
+
+.read-more button {
+  cursor:pointer;
+  font-size: 34px;
+  font-family: 'Molle',cursive;
+  padding:6px;
+  margin: 2%;
+  color:white;
+  background-color: #b6587a;
+}
+.more-text  {
+  display: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+}
+.partners h2 {
+  font-family: 'Molle',cursive;
+  font-size: 34px;
+}
+.partners img {
+  max-width: 300px;
+  height:auto;
+}
+
+footer {
+  text-align: center;
+  margin: 10px auto;
+  background-color: #f0b85b;
+}
+footer img {
+  display: inline-block;
+  max-width: 80px;
+  max-height: 50px;
+
+}
+.news  {
+  cursor:pointer;
+  font-size: 20px;
+  width:320px;
+  margin: 10px auto;
+  text-align: center;
+  color:#b6587a;
+  background-color: white;
+}
+.news #molle {
+  font-size: 30px;
 }
