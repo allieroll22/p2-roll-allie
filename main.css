@@ -124,6 +124,20 @@ footer img {
 }
 
 @media (min-width: 500px) {
+  #mobile-video {
+    display: none;
+  }
+  #desktop-video {
+    display: block;
+    margin: 0 auto;
+  }
+  .read-more img {
+    width:500px;
+    height:auto;
+  }
+  .all-at-once {
+    font-size: 50px;
+  }
   .about img {
     max-width: 200px;
     max-height: 150px;
