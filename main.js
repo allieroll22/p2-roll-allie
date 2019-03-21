@@ -1,4 +1,38 @@
-/* var elementSpace = document.getElementById('place');
+var readMore = document.getElementsByClassName('read');
+var i;
+  console.log(readMore);
+for (i = 0; i < readMore.length; i++) {
+  readMore[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none';
+    } else {
+      panel.style.display = 'block';
+    }
+  });
+}
+
+var myAccordion = document.getElementsByClassName('accordion-control');
+var i;
+  console.log(myAccordion);
+for (i = 0; i < myAccordion.length; i++) {
+  myAccordion[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none';
+    } else {
+      panel.style.display = 'block';
+    }
+  });
+}
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
+/*
+
+
+
+var elementSpace = document.getElementById('place');
 
 var weatherSpace = document.getElementById('weather');
 
