@@ -10,24 +10,20 @@ body {
 header {
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 2%;
 }
 .header-img {
-//  max-width: 400px;
-//  width: 100%;
+  max-width: 300px;
+  width: 100%;
 }
 nav a {
   font-family: 'Molle', cursive;
-//  text-align: center;
   color:white;
-
-
 }
 
 nav li {
   display: inline;
   padding-right: 5%;
-
-//  text-align: center;
 }
 
 main {
@@ -69,15 +65,19 @@ footer img {
 .news #molle {
   font-size: 30px;
 }
-/*///// Home Page */
+/* ************* Home Page */
 .home {
-  // max-width: 300px;
   text-align: center;
 }
 .home h2 {
   font-family: 'Open Sans Condensed', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: .3em;
 }
-
+iframe {
+  padding-bottom: 2%;
+}
 #desktop-video {
   display: none;
 }
@@ -132,9 +132,10 @@ footer img {
 .partners h2 {
   font-family: 'Molle',cursive;
   font-size: 34px;
+  padding: 1em 0;
 }
 .partners img {
-  max-width: 300px;
+  max-width: 200px;
   height:auto;
 }
 
@@ -241,7 +242,10 @@ footer img {
 
 
 @media (min-width: 500px) {
-
+  .header-img {
+    max-width: 450px;
+    width: 100%;
+  }
   nav li {
     font-size: 24px;
   }

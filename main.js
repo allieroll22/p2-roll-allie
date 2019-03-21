@@ -27,6 +27,15 @@ for (i = 0; i < myAccordion.length; i++) {
     }
   });
 }
+
+
+//ABOUT DONATE BUTTON
+/*
+var donateNow = document.getElementsByClassName('donate');
+  donateNow.addEventListener('click', function () {
+  alert('would you like to donate')
+}
+);
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
 /*
 
