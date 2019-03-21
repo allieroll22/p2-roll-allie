@@ -85,11 +85,21 @@ footer img {
   background-color: #c0d4df;
   padding: 1em;
   display: inline-block;
+  max-width: 900px;
+  width: 100%;
 }
 
-.read-more img {
+.tips-mobile  {
   width:300px;
   height:auto;
+}
+
+.tips-desktop  {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: none;
 }
 
 .read-more button {
@@ -104,7 +114,13 @@ footer img {
 .more-text  {
   display: none;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 24px;
+  text-align: left;
+}
+#tips {
   font-size: 30px;
+  color: #b6587a;
+  padding-top: 3px;
 }
 .partners h2 {
   font-family: 'Molle',cursive;
@@ -225,10 +241,7 @@ footer img {
     display: block;
     margin: 0 auto;
   }
-  .read-more img {
-    width:500px;
-    height:auto;
-  }
+
   .all-at-once {
     font-size: 50px;
   }
@@ -244,17 +257,20 @@ footer img {
   }
   #sleep {
     float:left;
-
-
   }
-}
 
-@media (min-width: 500px) {
+
   .column {
     flex-grow: 1;
     flex: 33.33%;
     max-width: 100%;
   }
+  .tips-mobile {
+  display: none;
+ }
+ .tips-desktop {
+   display: block;
+ }
 }
 
 @media (min-width: 700px) {
