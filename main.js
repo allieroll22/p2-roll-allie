@@ -1,3 +1,5 @@
+// /// /// /// READ MORE TAB /// //// //// ///
+
 var readMore = document.getElementsByClassName('read');
 var i;
   console.log(readMore);
@@ -13,6 +15,8 @@ for (i = 0; i < readMore.length; i++) {
   });
 };
 
+
+// // /// /// /// Get Involved ACCORDIAN // /// //// ///// ///
 var myAccordion = document.getElementsByClassName('accordion-control');
 var i;
   console.log(myAccordion);
@@ -28,10 +32,11 @@ for (i = 0; i < myAccordion.length; i++) {
   });
 };
 
+// ///// ///// //// BEGIN API ///// //// ////////
 var weatherSpace = document.getElementById('weather');
 
 
-// API Format
+// /// //// API Format //// ////  //// ///
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -47,16 +52,34 @@ xmlhttp.send();
 
 
 
-//ABOUT DONATE BUTTON
-/*
-var donateNow = document.getElementsByClassName('donate');
-  donateNow.addEventListener('click', function () {
-  alert('would you like to donate')
+// /// //// /// /// Pop Up Ad // //// //// /// ///
+var popUp = document.querySelector('.pop-up');
+
+var closeButton = document.querySelector('.close-button');
+
+function showPop() {
+  popUp.classList.toggle('show-pop-up');
 }
+
+
+window.addEventListener("scroll",
+  function () {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+      showPop();
+    }
+    else {
+    }
+  }, false
 );
+
+closeButton.onclick = function() {
+  popUp.style.display = 'none';
+};
+
+window.onclick = function(event) {
+  if(event.target === popUp) {
+    showPop();
+  }
+};
+
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
-*/
-
-
-
-//var elementSpace = document.getElementById('place');
