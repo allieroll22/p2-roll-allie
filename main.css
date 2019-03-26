@@ -242,8 +242,17 @@ iframe {
   width: 100%;
 
 }
-
-
+.api h1 {
+  font-size: 32px;
+}
+#weather-api  {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+}
+.api p {
+  font-size: 19px;
+  text-align: left;
+}
 
 @media (min-width: 500px) {
   .header-img {

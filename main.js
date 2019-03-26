@@ -36,28 +36,15 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var apiResult = JSON.parse(this.responseText);
-
-        var weatherToday = document.createTextNode(apiResult.weather[0].description);
-        weatherSpace.appendChild(weatherToday);
+        console.log(apiResult);
+       var weatherToday = document.createTextNode(apiResult.data.current.pollution.aqicn);
+       weatherSpace.appendChild(weatherToday);
     }
 };
-xmlhttp.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=5855797&appid=b6907d289e10d714a6e88b30761fae22', true);
+xmlhttp.open('GET', 'http://api.airvisual.com/v2/city?city=Honolulu&state=hawaii&country=USA&key=rSzMizcTS3qtiL9a4', true);
 xmlhttp.send();
 
-//http://api.openweathermap.org/data/2.5/weather?id=5855797&appid=b6907d289e10d714a6e88b30761fae22
 
-//https://samples.openweathermap.org/data/2.5/weather?id=5855797&appid=b6907d289e10d714a6e88b30761fae22
-
-
-//https://samples.openweathermap.org/data/2.5/weather?id=5855797&appid=b6907d289e10d714a6e88b30761fae22
-
-//https://samples.openweathermap.org/data/2.5/weather?zip=96731,us&appid=b6907d289e10d714a6e88b30761fae22
-
-/* xmlhttp.open('GET','https://samples.openweathermap.org/data/2.5/weather?zip=96717,us&appid=b6907d289e10d714a6e88b30761fae22', true);
-xmlhttp.send();
-Kahuku 96731
-'https://samples.openweathermap.org/data/2.5/weather?q=32801,us&appid=6efff70fe1477748e31c17d1c504635f'
-api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}
 
 
 //ABOUT DONATE BUTTON
