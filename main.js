@@ -15,7 +15,6 @@ for (i = 0; i < readMore.length; i++) {
   });
 };
 
-
 // // /// /// /// Get Involved ACCORDIAN // /// //// ///// ///
 var myAccordion = document.getElementsByClassName('accordion-control');
 var i;
@@ -35,8 +34,6 @@ for (i = 0; i < myAccordion.length; i++) {
 // ///// ///// //// BEGIN API ///// //// ////////
 var weatherSpace = document.getElementById('weather');
 
-
-// /// //// API Format //// ////  //// ///
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -48,9 +45,6 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open('GET', 'http://api.airvisual.com/v2/city?city=Honolulu&state=hawaii&country=USA&key=rSzMizcTS3qtiL9a4', true);
 xmlhttp.send();
-
-
-
 
 // /// //// /// /// Pop Up Ad // //// //// /// ///
 var popUp = document.querySelector('.pop-up');
